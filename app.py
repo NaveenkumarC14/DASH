@@ -22,6 +22,6 @@ st.markdown('''
 ''', unsafe_allow_html=True);
 a=px.bar(selected_state,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
 st.plotly_chart(a)
-st.markdown("## **Renewable and Nn Renewable Energy**")
+st.markdown("## **Renewable and Non Renewable Energy**")
 b=px.bar(energy,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
 st.plotly_chart(b)
