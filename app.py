@@ -156,7 +156,13 @@ elif visualization=='Insights':
 10. Rajasthan has the highest potential in Solar energy and the 2nd highest potential in Wind energy. Gujarat has the highest potential in wind energy.
   """
    )
-  st.markdown("## **OUT-OF-BOX INSIGHTS RELATING OTHER DOMAINS **")
+  st.markdown('''
+    <div class="jumbotron text-center" style='background-color: #fff'>
+    <h1 style="margin: auto; width: 100%;">OUT-OF-BOX INSIGHTS RELATING OTHER DOMAINS</h1>
+ 
+ 
+    </div>
+''', unsafe_allow_html=True);
   st.markdown(
   """
   **Health care :**
