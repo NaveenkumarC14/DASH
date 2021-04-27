@@ -35,8 +35,8 @@ if visualization=='Generation':
   energy_select=st.radio('Select a Energy Type',df1['EnergySourceType'].unique())
   energy=df1[df1['EnergySourceType']==energy_select]
   if select_chart=='Bar Chart':
-       b=px.bar(energy,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
-       st.plotly_chart(b)
+    b=px.bar(energy,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
+    st.plotly_chart(b)
   elif select_chart=='Bubble Chart':
     Bubble=px.scatter(df1, x='YearValue', y='Generation_GWh',
 	         size="Generation_GWh", color='EnergySource',size_max=60)
