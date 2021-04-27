@@ -26,7 +26,7 @@ if visualization=='Generation':
  
   st.markdown("## **State wise Electricity Generation via Renewables**")
   state_select = st.selectbox('Select a state',df['State'].unique())
-  select_chart = st.selectbox('Select a Chart',('Bar Chart','Bubble Chart','Pie'))
+  select_chart = st.sidebar.selectbox('Select a Chart',('Bar Chart','Bubble Chart','Pie'))
   selected_state = df[df['State']==state_select]
   if select_chart=='Bar Chart':
     a=px.bar(selected_state,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
