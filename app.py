@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np 
-from PIL import Image
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
@@ -11,6 +10,8 @@ df2=pd.read_csv('C.csv')
 df3=pd.read_csv('Renewable Electricity Capacity by State_D_20210426_203204.csv')
 df4=pd.read_csv('Electricity Potential by Energy Source_D_20210427_132109.csv')
 df5=pd.read_csv('Renewable Electricity Capacity by State_D_20210426_203204.csv')
+df6=pd.read_csv('Electricity Capacity by State_D_20210427_143749.csv')
+df7=pd.read_csv('Electricity Capacity by Energy Source_D_20210427_143811.csv')
 st.sidebar.title("Menu")
 visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity'))
 if visualization=='Generation':
@@ -39,11 +40,16 @@ if visualization=='Generation':
   c=px.bar(selected,x='YearValue',y='Generation_GWh')
   st.plotly_chart(c)
 elif visualization=='Capacity':
-  st.markdown("## **Energy Potential By State And Source**")
-  state_select = st.selectbox('Select a state',df3['State'].unique())
-  selected_state = df3[df3['State']==state_select]
-  a=px.bar(selected_state,x='YearValue',y='Capacity_MW',color='EnergySource',barmode='group')
+  st.markdown("## **Energy Potential By State**")
+  state_select = st.selectbox('Select a state',df6['State'].unique())
+  selected_state = df6[df6['State']==state_select]
+  a=px.bar(selected_state,x='YearValue',y='Capacity_MW')
   st.plotly_chart(a)
+  st.markdown("## **Energy Generation By Source**")
+  energy_select=st.radio('Select a Energy Type',df7['EnergySourceType'].unique())
+  energy=df7[df7['EnergySourceType']==energy_select]
+  b=px.bar(energy,x='YearValue',y='Capacity_MW',color='EnergySource',barmode='group')
+  st.plotly_chart(b)
 elif visualization=='Potential': 
   st.markdown("## **Energy Generation By State**")
   state = st.selectbox('Select state',df5['State'].unique())
