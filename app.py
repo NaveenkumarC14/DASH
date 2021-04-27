@@ -23,3 +23,4 @@ st.markdown('''
 a=px.bar(selected_state,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
 st.plotly_chart(a)
 b=px.bar(energy,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
+st.plotly_chart(b)
