@@ -154,6 +154,8 @@ elif visualization=='Insights':
 9. In last 4 years Tamil Nadu shows a good improvement in generation of energy including renewables like wind and solar. Tamil Nadu has wind potential as its highest among other renewables.
 
 10. Rajasthan has the highest potential in Solar energy and the 2nd highest potential in Wind energy. Gujarat has the highest potential in wind energy.
+
+11. In the last 5 years renewable energy installed capacity has increased by more than 200%
   """
    )
   st.markdown('''
