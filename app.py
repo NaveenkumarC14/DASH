@@ -65,7 +65,7 @@ if visualization=='Generation':
     c=px.scatter(selected,x='YearValue',y='Generation_GWh',size="Generation_GWh",size_max=60)
     st.plotly_chart(c)
   elif select_chart=='Pie':
-    a=px.pie(selected, values='Generation_GWh', names='State')
+    a=px.pie(selected, values='Generation_GWh', names='YearValue')
     st.plotly_chart(a)	
 	
 	
