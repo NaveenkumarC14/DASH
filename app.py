@@ -14,13 +14,13 @@ df6=pd.read_csv('Electricity Capacity by State_D_20210427_143749.csv')
 df7=pd.read_csv('Electricity Capacity by Energy Source_D_20210427_143811.csv')
 st.sidebar.title("Menu")
 visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity'))
- st.markdown('''
+st.markdown('''
     <div class="jumbotron text-center" style='background-color: #fff'>
     <h1 style="margin: auto; width: 100%;">Current Energy Scenario in India</h1>
  
  
     </div>
-    ''', unsafe_allow_html=True);
+''', unsafe_allow_html=True);
 if visualization=='Generation':
   
  
