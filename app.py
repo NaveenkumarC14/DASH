@@ -168,3 +168,5 @@ Opting for renewable energy sources will lead to a lower impact of the global oi
 Climate :
 
 Non-renewables currently being the largest electricity producer is hazardous to the climatic conditions and environment. It is possible to make electricity from renewables without producing carbon dioxide the leading cause of global climate change.
+"""
+   )
