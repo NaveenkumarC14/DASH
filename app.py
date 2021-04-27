@@ -56,7 +56,7 @@ elif visualization=='Potential':
   st.markdown("## **State Wise Potential **")
   state = st.selectbox('Select state',df5['State'].unique())
   selected = df5[df5['State']==state]
-  c=px.bar(selected,x='YearValue',y='CapacityIdentified_MW',color='EnergySource',barmode='group')
+  c=px.bar(selected,x='YearValue',y='CapacityIdentified_MW')
   st.plotly_chart(c)
   st.markdown("## **Energy Source Wise Potential**")
   energy_select=st.radio('Select a Energy Type',df4['EnergySourceType'].unique())
