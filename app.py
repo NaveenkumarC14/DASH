@@ -43,7 +43,7 @@ elif visualization=='Capacity':
   st.markdown("## **Energy Potential By State**")
   state_select = st.selectbox('Select a state',df6['State'].unique())
   selected_state = df6[df6['State']==state_select]
-  a=px.bar(selected_state,x='YearValue',y='Capacity_MW')
+  a=px.bar(selected_state,x='YearValue',y='Capacity_MW',color='EnergySource',barmode='group')
   st.plotly_chart(a)
   st.markdown("## **Energy Generation By Source**")
   energy_select=st.radio('Select a Energy Type',df7['EnergySourceType'].unique())
