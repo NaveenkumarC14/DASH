@@ -158,7 +158,6 @@ elif visualization=='Insights':
    )
   st.markdown('''
     <div class="jumbotron text-center" style='background-color: #fff'>
-    <h0></h0>
     <h1 style="margin: auto; width: 100%;">OUT-OF-BOX INSIGHTS RELATING OTHER DOMAINS</h1>
    
  
