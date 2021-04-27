@@ -46,7 +46,7 @@ elif visualization=='Capacity':
   st.plotly_chart(a)
 elif visualization=='Potential': 
   st.markdown("## **Energy Generation By State**")
-  state = st.selectbox('Select state',df5['State'].unique())
+  state = st.selectbox('Select state',df5['State'].unique().sort_values(by=['State'],ascending =False)
   selected = df5[df5['State']==state]
   c=px.bar(selected,x='YearValue',y='Capacity_MW',color='EnergySource',barmode='group')
   st.plotly_chart(c)
