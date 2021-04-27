@@ -14,6 +14,7 @@ df6=pd.read_csv('Electricity Capacity by State_D_20210427_143749.csv')
 df7=pd.read_csv('Electricity Capacity by Energy Source_D_20210427_143811.csv')
 st.sidebar.title("Energy")
 visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity'))
+select_chart = st.sidebar.selectbox('Select a Chart',('Bar Chart','Bubble Chart','Pie'))
 st.markdown('''
     <div class="jumbotron text-center" style='background-color: #fff'>
     <h1 style="margin: auto; width: 100%;">Current Energy Scenario in India</h1>
@@ -26,7 +27,7 @@ if visualization=='Generation':
  
   st.markdown("## **State wise Electricity Generation via Renewables**")
   state_select = st.selectbox('Select a state',df['State'].unique())
-  select_chart = st.sidebar.selectbox('Select a Chart',('Bar Chart','Bubble Chart','Pie'))
+  
   selected_state = df[df['State']==state_select]
   if select_chart=='Bar Chart':
     a=px.bar(selected_state,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
