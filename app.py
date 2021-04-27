@@ -13,7 +13,7 @@ df5=pd.read_csv('Electricity Potential by State_D_20210427_131321.csv')
 df6=pd.read_csv('Electricity Capacity by State_D_20210427_143749.csv')
 df7=pd.read_csv('Electricity Capacity by Energy Source_D_20210427_143811.csv')
 st.sidebar.title("Energy")
-visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity'))
+visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity','Insights'))
 select_chart = st.sidebar.selectbox('Select a Chart',('Bar Chart','Bubble Chart','Pie'))
 st.markdown('''
     <div class="jumbotron text-center" style='background-color: #fff'>
@@ -125,3 +125,12 @@ elif visualization=='Potential':
   elif select_chart=='Pie':
     a=px.pie(energy, values='CapacityIdentified_MW', names='YearValue')
     st.plotly_chart(a)
+elif visualization=='Insights': 
+  st.markdown("## **Insights**")
+  st.markdown(
+  """
+  This app is for visualizing the Covid19 data for USA which is collected 
+  from the wikipedia site https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States.        
+  User can select the Metrics Type from the drop-down list to see the trend in last 15 days
+  """
+   )
