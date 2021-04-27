@@ -9,7 +9,7 @@ df=pd.read_csv('A.csv')
 df1=pd.read_csv('B.csv')
 df2=pd.read_csv('C.csv')
 st.sidebar.title("Menu")
-visualization = st.sidebar.selectbox('Select a type',('Potential','Generation'))
+visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity'))
 
 st.markdown('''
 <div class="jumbotron text-center" style='background-color: #fff'>
