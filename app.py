@@ -88,8 +88,17 @@ elif visualization=='Capacity':
   st.markdown("## **Installed Capacity by Energy Source**")
   energy_select=st.radio('Select a Energy Type',df7['EnergySourceType'].unique())
   energy=df7[df7['EnergySourceType']==energy_select]
-  b=px.bar(energy,x='YearValue',y='Capacity_MW',color='EnergySource',barmode='group')
-  st.plotly_chart(b)
+  if select_chart=='Bar Chart':
+    b=px.bar(energy,x='YearValue',y='Capacity_MW',color='EnergySource',barmode='group')
+    st.plotly_chart(b)
+  elif select_chart=='Bubble Chart':
+    b=px.scatter(energy,x='YearValue',y='Capacity_MW',size="Capacity_MW",size_max=60)
+    st.plotly_chart(b)
+  elif select_chart=='Pie':
+    a=px.pie(energy, values='Capacity_MW', names='YearValue')
+    st.plotly_chart(a)	  
+	
+	
 elif visualization=='Potential': 
   st.markdown("## **State Wise Potential **")
   state = st.selectbox('Select state',df5['State'].unique())
