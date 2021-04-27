@@ -10,7 +10,7 @@ df1=pd.read_csv('B.csv')
 df2=pd.read_csv('C.csv')
 df3=pd.read_csv('Renewable Electricity Capacity by State_D_20210426_203204.csv')
 df4=pd.read_csv('Electricity Potential by Energy Source_D_20210427_132109.csv')
-
+df5=pd.read_csv('Renewable Electricity Capacity by State_D_20210426_203204.csv')
 st.sidebar.title("Menu")
 visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity'))
 if visualization=='Generation':
@@ -45,6 +45,11 @@ elif visualization=='Capacity':
   a=px.bar(selected_state,x='YearValue',y='Capacity_MW',color='EnergySource',barmode='group')
   st.plotly_chart(a)
 elif visualization=='Potential': 
+  st.markdown("## **Energy Generation By State**")
+  state = st.selectbox('Select state',df5['State'].unique())
+  selected = df5[df5['State']==state]
+  c=px.bar(selected,x='YearValue',y='Capacity_MW')
+  st.plotly_chart(c)
   st.markdown("## **Energy Generation By Source**")
   energy_select=st.radio('Select a Energy Type',df4['EnergySourceType'].unique())
   energy=df4[df4['EnergySourceType']==energy_select]
