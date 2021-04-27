@@ -78,7 +78,7 @@ elif visualization=='Capacity':
     a=px.bar(selected_state,x='YearValue',y='Capacity_MW',color='EnergySource',barmode='group')
     st.plotly_chart(a)
   elif select_chart=='Bubble Chart':
-    a=px.scatter(selected_state,x='YearValue',y='Capacity_MW',size="Capacity_MW",size_max=60)
+    a=px.scatter(selected_state,x='YearValue',y='Capacity_MW',size="Capacity_MW",color='EnergySource',size_max=60)
     st.plotly_chart(a)
   elif select_chart=='Pie':
     a=px.pie(selected_state, values='Capacity_MW', names='YearValue')
@@ -92,7 +92,7 @@ elif visualization=='Capacity':
     b=px.bar(energy,x='YearValue',y='Capacity_MW',color='EnergySource',barmode='group')
     st.plotly_chart(b)
   elif select_chart=='Bubble Chart':
-    b=px.scatter(energy,x='YearValue',y='Capacity_MW',size="Capacity_MW",size_max=60)
+    b=px.scatter(energy,x='YearValue',y='Capacity_MW',size="Capacity_MW",color='EnergySource',size_max=60)
     st.plotly_chart(b)
   elif select_chart=='Pie':
     a=px.pie(energy, values='Capacity_MW', names='YearValue')
