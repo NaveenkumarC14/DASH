@@ -8,6 +8,7 @@ import plotly.graph_objects as go
 df=pd.read_csv('A.csv')
 df1=pd.read_csv('B.csv')
 df2=pd.read_csv('C.csv')
+df3=pd.read_csv('Renewable Electricity Capacity by State_D_20210426_203204.csv')
 st.sidebar.title("Menu")
 visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity'))
 if visualization=='Generation':
@@ -35,3 +36,9 @@ if visualization=='Generation':
   selected = df2[df2['State']==state]
   c=px.bar(selected,x='YearValue',y='Generation_GWh')
   st.plotly_chart(c)
+elif visualization=='Potential':
+  st.markdown("## **Energy Potential By Source**")
+  state_select = st.selectbox('Select a state',df3['State'].unique())
+  selected_state = df3[df3['State']==state_select]
+  a=px.bar(selected_state,x='YearValue',y='Capacity_MW',color='EnergySource',barmode='group')
+  st.plotly_chart(a)
