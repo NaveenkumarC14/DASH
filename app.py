@@ -25,7 +25,7 @@ a=px.bar(selected_state,x='YearValue',y='Generation_GWh',color='EnergySource',ba
 st.plotly_chart(a)
 
 st.markdown("## **Energy Generation By Source**")
-energy_select=st.selectbox('Select a Energy Type',df1['EnergySourceType'].unique())
+energy_select=st.radio('Select a Energy Type',df1['EnergySourceType'].unique())
 energy=df1[df1['EnergySourceType']==energy_select]
 b=px.bar(energy,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
 st.plotly_chart(b)
