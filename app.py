@@ -11,5 +11,12 @@ df2=pd.read_csv('C.csv')
 st.sidebar.title("Menu")
 state_select = st.sidebar.selectbox('Select a state',df['State'].unique())
 selected_state = df[df['State']==state_select]
+st.markdown('''
+<div class="jumbotron text-center" style='background-color: #fff'>
+  <h1 style="margin: auto; width: 100%;">Renewable Energy Dashboard</h1>
+  <h2></h2>
+  
+</div>
+''', unsafe_allow_html=True);
 a=px.bar(selected_state,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
 st.plotly_chart(a)
