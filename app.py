@@ -10,7 +10,7 @@ df1=pd.read_csv('B.csv')
 df2=pd.read_csv('C.csv')
 st.sidebar.title("Menu")
 state_select = st.sidebar.selectbox('Select a state',df['State'].unique())
-energy_select=st.sidebar.selectbox('Select a state',df1['EnergySourceType'].unique())
+energy_select=st.sidebar.selectbox('Select a Energy Type',df1['EnergySourceType'].unique())
 selected_state = df[df['State']==state_select]
 energy=df1[df1['EnergySourceType']==energy_select]
 st.markdown('''
