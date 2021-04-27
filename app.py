@@ -126,11 +126,45 @@ elif visualization=='Potential':
     a=px.pie(energy, values='CapacityIdentified_MW', names='YearValue')
     st.plotly_chart(a)
 elif visualization=='Insights': 
-  st.markdown("## **Insights**")
+  st.markdown("## **INSIGHTS FROM ANALYSIS IN ENERGY DOMAIN**")
   st.markdown(
   """
-  This app is for visualizing the Covid19 data for USA which is collected 
-  from the wikipedia site https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States.        
-  User can select the Metrics Type from the drop-down list to see the trend in last 15 days
+1. India is the 4th largest consumer of energy , 5th in energy economy and ranked 3rd on renewable energy investment and future plans. India ranked 5th for overall installed renewable energy capacity.
+
+2. Govt targeted to achieve 175GW renewable energy capacity by 2022.
+
+3. Primary energy consumption(Non-renewables) grew fastest since 2006. And Coal stands as the largest producer of energy since 2006 to till date.
+
+4. All fuels grew faster than their 10 year averages apart from renewables, although renewables still accounted for the second largest increment to energy growth.
+
+5. Renewable energy has a share of 23.3% in the total installed generation capacity in the country till the initial stage of 2020.
+
+6. Solar energy has had a rapid growth in the last 5-6 years from 2.6GW to 34GW. Solar park has been doubled from 20GW to 40GW.
+
+7. Since 2008 Wind Energy has kick-started its growth. As an extremity highest ever wind energy has been generated in the year 2016-17 by addition of 5.5GW, which is 57.52% of total energy generated in the particular year.
+
+8. In the last 2 years Karnataka has generated the highest energy including renewables.
+
+9. In last 4 years Tamil Nadu shows a good improvement in generation of energy including renewables like wind and solar. Tamil Nadu has wind potential as its highest among other renewables.
+
+10. Rajasthan has the highest potential in Solar energy and the 2nd highest potential in Wind energy. Gujarat has the highest potential in wind energy.
   """
    )
+  st.markdown("## **OUT-OF-BOX INSIGHTS RELATING OTHER DOMAINS** )
+  st.markdown(
+  """
+  **Health care** :
+
+Renewable energy growth has a huge positive impact on people's health and there are reduced health and environmental hazards whereas the non-renewables are quite hazardous to health.
+
+Employment :
+
+Development of the renewable energy sector would bring greater average job creation as it requires more labour than its fossil fuel counterpart.
+
+Economy :
+
+Opting for renewable energy sources will lead to a lower impact of the global oil prices on Indian economy.
+
+Climate :
+
+Non-renewables currently being the largest electricity producer is hazardous to the climatic conditions and environment. It is possible to make electricity from renewables without producing carbon dioxide the leading cause of global climate change.
