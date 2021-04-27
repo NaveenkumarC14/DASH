@@ -26,7 +26,7 @@ if visualization=='Generation':
  
   st.markdown("## **State wise Electricity Generation via Renewables**")
   state_select = st.selectbox('Select a state',df['State'].unique())
-  select_chart = st.selectbox('Select a Chart',('Bar Chart','Bubble Chart'))
+  select_chart = st.selectbox('Select a Chart',('Bar Chart','Bubble Chart','Pie'))
   selected_state = df[df['State']==state_select]
   if select_chart=='Bar Chart':
     a=px.bar(selected_state,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
@@ -35,6 +35,9 @@ if visualization=='Generation':
     Bubble=px.scatter(selected_state, x='YearValue', y='Generation_GWh',
 	         size="Generation_GWh", color='EnergySource',size_max=60)
     st.plotly_chart(Bubble)
+  elif select_chart=='Pie':
+    a=px.pie(selected_state, values='Generation_GWh', names='State')
+    st.plotly_chart(a)
   st.markdown("## **Generation of Electricity By Energy Source**")
   energy_select=st.radio('Select a Energy Type',df1['EnergySourceType'].unique())
   energy=df1[df1['EnergySourceType']==energy_select]
