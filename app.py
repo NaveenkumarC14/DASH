@@ -14,8 +14,8 @@ df2=pd.read_csv('C.csv')
 st.markdown('''
 <div class="jumbotron text-center" style='background-color: #fff'>
   <h1 style="margin: auto; width: 100%;">Renewable Energy Dashboard</h1>
-  <h2></h2>
-  
+ 
+ 
 </div>
 ''', unsafe_allow_html=True);
 state_select = st.selectbox('Select a state',df['State'].unique())
