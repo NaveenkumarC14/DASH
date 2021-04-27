@@ -36,7 +36,7 @@ if visualization=='Generation':
 	         size="Generation_GWh", color='EnergySource',size_max=60)
     st.plotly_chart(Bubble)
   elif select_chart=='Pie':
-    a=px.pie(selected_state, values='Generation_GWh', names='State')
+    a=px.pie(selected_state, values='Generation_GWh', names='EnergySource')
     st.plotly_chart(a)
   st.markdown("## **Generation of Electricity By Energy Source**")
   energy_select=st.radio('Select a Energy Type',df1['EnergySourceType'].unique())
