@@ -126,7 +126,13 @@ elif visualization=='Potential':
     a=px.pie(energy, values='CapacityIdentified_MW', names='YearValue')
     st.plotly_chart(a)
 elif visualization=='Insights': 
-  st.markdown("## **INSIGHTS FROM ANALYSIS IN ENERGY DOMAIN**")
+  st.markdown('''
+    <div class="jumbotron text-center" style='background-color: #fff'>
+    <h1 style="margin: auto; width: 100%;">INSIGHTS FROM ANALYSIS IN ENERGY DOMAIN</h1>
+ 
+ 
+    </div>
+''', unsafe_allow_html=True);
   st.markdown(
   """
 1. India is the 4th largest consumer of energy , 5th in energy economy and ranked 3rd on renewable energy investment and future plans. India ranked 5th for overall installed renewable energy capacity.
