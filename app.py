@@ -22,5 +22,10 @@ st.markdown('''
 ''', unsafe_allow_html=True);
 a=px.bar(selected_state,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
 st.plotly_chart(a)
+<div class="jumbotron text-center" style='background-color: #fff'>
+  <h1 style="margin: auto; width: 100%;">''' energy_select '''</h1>
+  <h2></h2>
+</div>
+ ''', unsafe_allow_html=True);
 b=px.bar(energy,x='YearValue',y='Generation_GWh',color='EnergySource',barmode='group')
 st.plotly_chart(b)
