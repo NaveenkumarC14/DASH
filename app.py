@@ -123,5 +123,5 @@ elif visualization=='Potential':
     b=px.scatter(energy,x='YearValue',y='CapacityIdentified_MW',size="CapacityIdentified_MW",color='EnergySource',size_max=60)
     st.plotly_chart(b)
   elif select_chart=='Pie':
-    a=px.pie(energy, values='CapacityIdentified_MW', names=energy['YearValue'])
+    a=px.pie(energy, values='CapacityIdentified_MW', names='YearValue')
     st.plotly_chart(a)
