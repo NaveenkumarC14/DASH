@@ -126,7 +126,7 @@ elif visualization=='Potential':
     a=px.pie(energy, values='CapacityIdentified_MW', names='YearValue')
     st.plotly_chart(a)
 elif visualization=='Insights': 
-  st.markdown("## **Insights**")
+  st.markdown("## **INSIGHTS FROM ANALYSIS IN ENERGY DOMAIN**")
   st.markdown(
   """
 1. India is the 4th largest consumer of energy , 5th in energy economy and ranked 3rd on renewable energy investment and future plans. India ranked 5th for overall installed renewable energy capacity.
@@ -150,7 +150,7 @@ elif visualization=='Insights':
 10. Rajasthan has the highest potential in Solar energy and the 2nd highest potential in Wind energy. Gujarat has the highest potential in wind energy.
   """
    )
-  st.markdown("## **OUT-OF-BOX INSIGHTS RELATING OTHER DOMAINS** )
+  st.markdown("## **OUT-OF-BOX INSIGHTS RELATING OTHER DOMAINS **")
   st.markdown(
   """
   **Health care** :
