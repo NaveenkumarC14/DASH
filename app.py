@@ -153,19 +153,19 @@ elif visualization=='Insights':
   st.markdown("## **OUT-OF-BOX INSIGHTS RELATING OTHER DOMAINS **")
   st.markdown(
   """
-  **Health care** :
+  **Health care :**
 
 Renewable energy growth has a huge positive impact on people's health and there are reduced health and environmental hazards whereas the non-renewables are quite hazardous to health.
 
-Employment :
+**Employment :**
 
 Development of the renewable energy sector would bring greater average job creation as it requires more labour than its fossil fuel counterpart.
 
-Economy :
+**Economy :**
 
 Opting for renewable energy sources will lead to a lower impact of the global oil prices on Indian economy.
 
-Climate :
+**Climate :**
 
 Non-renewables currently being the largest electricity producer is hazardous to the climatic conditions and environment. It is possible to make electricity from renewables without producing carbon dioxide the leading cause of global climate change.
 """
