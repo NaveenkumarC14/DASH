@@ -12,7 +12,7 @@ df4=pd.read_csv('Electricity Potential by Energy Source_D_20210427_132109.csv')
 df5=pd.read_csv('Renewable Electricity Capacity by State_D_20210426_203204.csv')
 df6=pd.read_csv('Electricity Capacity by State_D_20210427_143749.csv')
 df7=pd.read_csv('Electricity Capacity by Energy Source_D_20210427_143811.csv')
-st.sidebar.title("Menu")
+st.sidebar.title("Energy")
 visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity'))
 st.markdown('''
     <div class="jumbotron text-center" style='background-color: #fff'>
@@ -24,7 +24,7 @@ st.markdown('''
 if visualization=='Generation':
   
  
-  st.markdown("## **State wise Electricity Generation Via Renewables**")
+  st.markdown("## **State wise Electricity Generation via Renewables**")
   state_select = st.selectbox('Select a state',df['State'].unique())
 
   selected_state = df[df['State']==state_select]
