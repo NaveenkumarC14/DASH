@@ -103,11 +103,25 @@ elif visualization=='Potential':
   st.markdown("## **State Wise Potential **")
   state = st.selectbox('Select state',df5['State'].unique())
   selected = df5[df5['State']==state]
-  c=px.bar(selected,x='YearValue',y='CapacityIdentified_MW')
-  st.plotly_chart(c)
+  if select_chart=='Bar Chart':
+    c=px.bar(selected,x='YearValue',y='CapacityIdentified_MW')
+    st.plotly_chart(c)
+  elif select_chart=='Bubble Chart':
+    b=px.scatter(selected,x='YearValue',y='CapacityIdentified_MW',size="CapacityIdentified_MW",size_max=60)
+    st.plotly_chart(b)
+  elif select_chart=='Pie':
+    a=px.pie(selected, values='CapacityIdentified_MW', names='YearValue')
+    st.plotly_chart(a)
+	
   st.markdown("## **Energy Source Wise Potential**")
   energy_select=st.radio('Select a Energy Type',df4['EnergySourceType'].unique())
   energy=df4[df4['EnergySourceType']==energy_select]
-  b=px.bar(energy,x='YearValue',y='CapacityIdentified_MW',color='EnergySource',barmode='group')
-  st.plotly_chart(b)
-  
+  if select_chart=='Bar Chart':
+    b=px.bar(energy,x='YearValue',y='CapacityIdentified_MW',color='EnergySource',barmode='group')
+    st.plotly_chart(b)
+  elif select_chart=='Bubble Chart':
+    b=px.scatter(energy,x='YearValue',y='CapacityIdentified_MW',size="CapacityIdentified_MW",color='EnergySource',size_max=60)
+    st.plotly_chart(b)
+  elif select_chart=='Pie':
+    a=px.pie(energy, values='CapacityIdentified_MW', names='YearValue')
+    st.plotly_chart(a)
