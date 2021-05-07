@@ -15,7 +15,7 @@ df7=pd.read_csv('Electricity Capacity by Energy Source_D_20210427_143811.csv')
 st.sidebar.title("Energy")
 visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity','Insights'))
 select_chart = st.sidebar.selectbox('Select a Chart',('Bar Chart','Bubble Chart','Pie'))
-st.title("title ila da")
+
 st.markdown('''
     <div class="jumbotron text-center" style='background-color: #fff'>
     <h1 style="margin: auto; width: 100%;">Current Energy Scenario in India</h1>
