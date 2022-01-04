@@ -7,5 +7,5 @@ if your_name in df.columns:
    print("Courses column is present : Yes")
 else:
    print("Courses column is present : No")
-st.dataframe(df)
+df
 
