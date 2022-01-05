@@ -48,11 +48,12 @@ if __name__ == '__main__':
     txt1 = input1.text_input("Insert Company:")
     txt2 = input2.text_input("Insert Number:")
     bt = st.button("Search")
+    
     if bt:
         txt = "Search"
         input.text_input("Insert Brand:", value=txt)
-        input.text_input("Insert Company:", value=txt1)
-        input.text_input("Insert Number:", value=txt2)
+        input.text_input("Insert Company:", value=txt)
+        input.text_input("Insert Number:", value=txt)
         res = df.isin([txt,txt1,txt2]).any().any()
 
         if res :
