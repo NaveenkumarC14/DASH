@@ -40,10 +40,19 @@ CompanyName=st.text_input("Company")
 Brandname=st.text_input("Brand")
 ContactNumber=st.text_input("Number")
 
-res = df.isin([CompanyName,Brandname,ContactNumber]).any().any()
+if __name__ == '__main__':
+    input = st.empty()
+    txt = input.text_input("Insert number:")
+    bt = st.button("Search")
+  if bt:
+        txt = "Search"
+        input.text_input("Insert Company:", value=txt)
+        input.text_input("Insert Brand:", value=txt)
+        input.text_input("Insert Number:", value=txt)
+        res = df.isin([CompanyName,Brandname,ContactNumber]).any().any()
 
-if res :
-   st.write("\nThis value exists in Dataframe")
+        if res :
+          st.write("\nThis value exists in Dataframe")
 
-else :
-   st.write("\nThis value does not exists in Dataframe")
+        else :
+         st.write("\nThis value does not exists in Dataframe")
