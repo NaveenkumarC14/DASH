@@ -31,7 +31,6 @@ if __name__ == '__main__':
         res = df.isin([txt]).any().any()
         if res :
           st.write("This value exists in Dataframe")
-
         else :
           st.write("This value does not exists in Dataframe")
-    st.write(txt)
+    
