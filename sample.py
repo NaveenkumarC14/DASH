@@ -42,14 +42,16 @@ df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGES
 
 if __name__ == '__main__':
     input = st.empty()
-    txt = input.text_input("Insert number:")
+    txt = input.text_input("Insert Brand:")
+    txt1 = input.text_input("Insert Company:")
+    txt2 = input.text_input("Insert Number:")
     bt = st.button("Search")
     if bt:
         txt = "Search"
         input.text_input("Insert Company:", value=txt)
-        input.text_input("Insert Brand:", value=txt)
-        input.text_input("Insert Number:", value=txt)
-        res = df.isin([CompanyName,Brandname,ContactNumber]).any().any()
+        input.text_input("Insert Brand:", value=txt1)
+        input.text_input("Insert Number:", value=txt2)
+        res = df.isin([txt,txt1,txt2]).any().any()
 
         if res :
           st.write("\nThis value exists in Dataframe")
