@@ -42,9 +42,11 @@ df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGES
 
 if __name__ == '__main__':
     input = st.empty()
+    input1 = st.empty()
+    input2 = st.empty()
     txt = input.text_input("Insert Brand:")
-    txt1 = input.text_input("Insert Company:")
-    txt2 = input.text_input("Insert Number:")
+    txt1 = input1.text_input("Insert Company:")
+    txt2 = input2.text_input("Insert Number:")
     bt = st.button("Search")
     if bt:
         txt = "Search"
