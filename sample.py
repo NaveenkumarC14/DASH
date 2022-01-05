@@ -23,10 +23,10 @@ df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGES
 if __name__ == '__main__':
     input = st.empty()
     txt = input.text_input("Insert number:")
-    bt = st.button("Text01")
+    bt = st.button("Search")
 
     if bt:
-        txt = "Text01"
+        txt = "Search"
         #input.text_input("Insert text:", value=txt)
         res = df.isin([txt]).any().any()
         if res :
