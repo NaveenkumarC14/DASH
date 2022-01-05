@@ -15,9 +15,9 @@ your_name=st.text_input("Number")
 res = df.isin([your_name]).any().any()
 
 if res :
-   print("\nThis value exists in Dataframe")
+   st.write("This value exists in Dataframe")
 
 else :
-   print("\nThis value does not exists in Dataframe")
+   st.write("This value does not exists in Dataframe")
 
 
