@@ -50,8 +50,8 @@ if __name__ == '__main__':
     bt = st.button("Search")
     if bt:
         txt = "Search"
-        input.text_input("Insert Company:", value=txt)
         input.text_input("Insert Brand:", value=txt1)
+        input.text_input("Insert Company:", value=txt)
         input.text_input("Insert Number:", value=txt2)
         res = df.isin([txt,txt1,txt2]).any().any()
 
