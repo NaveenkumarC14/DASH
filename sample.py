@@ -11,7 +11,7 @@ import numpy as np
 
 df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGEStlOKciPERkgSLoCYxPObTbFbblm85P0xDtZM5C7fHsrgpEL0pdQCsrz-F_G-Rz3/pub?gid=1840897213&single=true&output=csv")
 #print(df['Contact Number'])
-your_name=st.text_input("Number",value=8075311214)
+#your_name=st.text_input("Number",value=8075311214)
 res = df.isin([your_name]).any().any()
 
 #if res :
@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     if bt:
         txt = "Search"
-        input.text_input("Insert text:", value=txt)
+        input.text_input("Insert Number:", value=txt)
         res = df.isin([txt]).any().any()
         if res :
           st.write("This value exists in Dataframe")
