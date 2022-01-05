@@ -44,7 +44,7 @@ if __name__ == '__main__':
     input = st.empty()
     txt = input.text_input("Insert number:")
     bt = st.button("Search")
-  if bt:
+   if bt:
         txt = "Search"
         input.text_input("Insert Company:", value=txt)
         input.text_input("Insert Brand:", value=txt)
