@@ -34,3 +34,16 @@ if __name__ == '__main__':
         else :
           st.write("This value does not exists in Dataframe")
     
+    
+    
+CompanyName=st.text_input("Company")
+Brandname=st.text_input("Brand")
+ContactNumber=st.text_input("Number")
+
+res = df.isin([CompanyName,Brandname,ContactNumber]).any().any()
+
+if res :
+   st.write("\nThis value exists in Dataframe")
+
+else :
+   st.write("\nThis value does not exists in Dataframe")
