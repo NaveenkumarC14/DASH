@@ -36,9 +36,9 @@ df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGES
     
     
     
-CompanyName=st.text_input("Company")
-Brandname=st.text_input("Brand")
-ContactNumber=st.text_input("Number")
+#CompanyName=st.text_input("Company")
+#Brandname=st.text_input("Brand")
+#ContactNumber=st.text_input("Number")
 
 if __name__ == '__main__':
     input = st.empty()
