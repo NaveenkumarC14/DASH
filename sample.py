@@ -32,6 +32,6 @@ if __name__ == '__main__':
         if res :
           st.write("This value exists in Dataframe")
 
-       else :
+        else :
           st.write("This value does not exists in Dataframe")
     st.write(txt)
