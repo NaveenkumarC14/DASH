@@ -6,10 +6,10 @@ df
 your_name = st.text_input("Number")
 def search(your_name, df['phone']):
     for i in range(len(list)):
-        if list[i] == platform:
+        if list[i] == your_name:
             return True
     return False
-if search(your_name,df['phone']):
+if search(df['phone'],your_name):
     print("Platform is found")
 else:
     print("Platform does not found")
