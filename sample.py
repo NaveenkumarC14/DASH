@@ -9,7 +9,9 @@ import numpy as np
 #  df[df['phone'] == your_name]
     #st.write("There is some value. Processing...")
 @st.cache(allow_output_mutation=True)
-df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGEStlOKciPERkgSLoCYxPObTbFbblm85P0xDtZM5C7fHsrgpEL0pdQCsrz-F_G-Rz3/pub?gid=1840897213&single=true&output=csv")
+def load_data():
+    df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGEStlOKciPERkgSLoCYxPObTbFbblm85P0xDtZM5C7fHsrgpEL0pdQCsrz-F_G-Rz3/pub?gid=1840897213&single=true&output=csv")
+    return df
 
 if __name__ == '__main__':
     input = st.empty()
