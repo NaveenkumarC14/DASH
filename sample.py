@@ -29,7 +29,7 @@ if __name__ == '__main__':
            #st.write("This value exists in Dataframe")
         else :
             st.markdown('''
-<div>
+<div class="jumbotron text-center" style='background-color: #fff'>
   <p style="color:red" "font-size:300%" align="center" >This value does not exists in Dataframe</p>
 </div>
  ''', unsafe_allow_html=True);
