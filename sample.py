@@ -9,8 +9,8 @@ import numpy as np
 #  df[df['phone'] == your_name]
     #st.write("There is some value. Processing...")
     
-st.markdown(
-page_bg_img = '''
+st.markdown('''
+page_bg_img =
 <style>
 body {
 background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
