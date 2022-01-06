@@ -37,12 +37,21 @@ df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGES
 if __name__ == '__main__':
     input = st.empty()    
     txt = input.text_input(" ")
+    
+    st.markdown("""
+<style>
+div.stButton > button:first-child {
+    background-color: #0099ff;
+    color:#ffffff;
+}
+div.stButton > button:hover {
+    background-color: #00ff00;
+    color:#ff0000;
+    }
+</style>""", unsafe_allow_html=True)
+
     bt = st.button("Search")
-    st.markdown('''
-<div>
-  <h4 style="color:#33D1FF" "font-size:200%" align="center" >'''st.button("Search")'''</h4>
-</div>
- ''', unsafe_allow_html=True);
+
 
 
     if bt:
