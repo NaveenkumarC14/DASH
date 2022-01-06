@@ -18,7 +18,21 @@ background-size: cover;
 }
 </style>
 ''',unsafe_allow_html=True)
-    
+   
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)    
+
     
 df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGEStlOKciPERkgSLoCYxPObTbFbblm85P0xDtZM5C7fHsrgpEL0pdQCsrz-F_G-Rz3/pub?gid=1840897213&single=true&output=csv")
 
