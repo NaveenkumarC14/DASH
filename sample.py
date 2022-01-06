@@ -22,15 +22,15 @@ if __name__ == '__main__':
         res = df.isin([txt]).any().any()
         if res :
             st.markdown('''
-<div class="jumbotron text-center" style='background-color: #fff'>
-  <p style=text-align: center,"font-size:20px"; width: 100%;">This value exists in Dataframe</p>
+<div>
+  <h1 style="color:green" "font-size:200%" align="center" >This value exists in Dataframe</h1>
 </div>
  ''', unsafe_allow_html=True);
            #st.write("This value exists in Dataframe")
         else :
             st.markdown('''
 <div>
-  <h1 style="color:red" "font-size:300%" align="center" >This value does not exists in Dataframe</h1>
+  <h1 style="color:red" "font-size:200%" align="center" >This value does not exists in Dataframe</h1>
 </div>
  ''', unsafe_allow_html=True);
 
