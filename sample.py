@@ -28,16 +28,22 @@ st.markdown(
 
 df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGEStlOKciPERkgSLoCYxPObTbFbblm85P0xDtZM5C7fHsrgpEL0pdQCsrz-F_G-Rz3/pub?gid=1840897213&single=true&output=csv")
 
-if __name__ == '__main__':
-    st.markdown('''
+ st.markdown('''
 <div>
   <h4 style="color:#33D1FF" "font-size:200%" align="center" >Enter Phone Number</h4>
 </div>
  ''', unsafe_allow_html=True);
-    input = st.empty()
-    
+
+if __name__ == '__main__':
+    input = st.empty()    
     txt = input.text_input(" ")
     bt = st.button("Search")
+    st.markdown('''
+<div>
+  <h4 style="color:#33D1FF" "font-size:200%" align="center" >'''st.button("Search")'''</h4>
+</div>
+ ''', unsafe_allow_html=True);
+
 
     if bt:
         #txt = "txt"
