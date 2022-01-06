@@ -23,7 +23,7 @@ if __name__ == '__main__':
         if res :
             st.markdown('''
 <div class="jumbotron text-center" style='background-color: #fff'>
-  <p style="font-size:20px"; text-align: center; width: 100%;">This value exists in Dataframe</p>
+  <p style=text-align: center,"font-size:20px"; width: 100%;">This value exists in Dataframe</p>
 </div>
  ''', unsafe_allow_html=True);
            #st.write("This value exists in Dataframe")
