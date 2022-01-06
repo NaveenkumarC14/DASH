@@ -8,10 +8,8 @@ import numpy as np
 #if your_name:
 #  df[df['phone'] == your_name]
     #st.write("There is some value. Processing...")
-@st.cache(allow_output_mutation=True)
-def load_data():
-    df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGEStlOKciPERkgSLoCYxPObTbFbblm85P0xDtZM5C7fHsrgpEL0pdQCsrz-F_G-Rz3/pub?gid=1840897213&single=true&output=csv")
-    return df
+
+
 
 if __name__ == '__main__':
     input = st.empty()
@@ -26,7 +24,10 @@ if __name__ == '__main__':
           st.write("This value exists in Dataframe")
         else :
           st.write("This value does not exists in Dataframe")
-    
+    @st.cache
+    def load_data():
+    df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGEStlOKciPERkgSLoCYxPObTbFbblm85P0xDtZM5C7fHsrgpEL0pdQCsrz-F_G-Rz3/pub?gid=1840897213&single=true&output=csv")
+    return df
     
     
 #CompanyName=st.text_input("Company")
