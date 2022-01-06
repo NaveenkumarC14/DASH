@@ -36,14 +36,14 @@ if __name__ == '__main__':
         if res :
             st.markdown('''
 <div>
-  <h3 style="color:green" "font-size:200%" align="center" >This value exists in Dataframe</h3>
+  <h3 style="color:red" "font-size:200%" align="center" >This value exists in Dataframe</h3>
 </div>
  ''', unsafe_allow_html=True);
            #st.write("This value exists in Dataframe")
         else :
             st.markdown('''
 <div>
-  <h3 style="color:red" "font-size:200%" align="center" >This value does not exists in Dataframe</h3>
+  <h3 style="color:green" "font-size:200%" align="center" >This value does not exists in Dataframe</h3>
 </div>
  ''', unsafe_allow_html=True);
 
