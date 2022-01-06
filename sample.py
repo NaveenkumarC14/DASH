@@ -26,7 +26,7 @@ if __name__ == '__main__':
   <h1></h1><p style="margin: auto; font-weight: 400; text-align: center; width: 100%;">This value exists in Dataframe</p>
 </div>
  ''', unsafe_allow_html=True);
-           st.write("This value exists in Dataframe")
+           #st.write("This value exists in Dataframe")
         else :
           st.write("This value does not exists in Dataframe")
     
