@@ -30,7 +30,7 @@ if __name__ == '__main__':
         else :
             st.markdown('''
 <div>
-  <h1 style="color:red" "font-size:200%" align="center" >This value does not exists in Dataframe</h1>
+  <h3 style="color:red" "font-size:200%" align="center" >This value does not exists in Dataframe</h3>
 </div>
  ''', unsafe_allow_html=True);
 
