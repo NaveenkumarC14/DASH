@@ -15,7 +15,7 @@ st.markdown(
     <style>
     .reportview-container {
         background: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366")
-        background: cover;
+        background-size: contain;
     }
     </style>
     """,
