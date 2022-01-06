@@ -21,8 +21,8 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )    
-
-st.image(https://images.unsplash.com/photo-1542281286-9e0a16bb7366, width=None)  
+a="https://images.unsplash.com/photo-1542281286-9e0a16bb7366"
+st.image(a, width=None)  
 df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGEStlOKciPERkgSLoCYxPObTbFbblm85P0xDtZM5C7fHsrgpEL0pdQCsrz-F_G-Rz3/pub?gid=1840897213&single=true&output=csv")
 
 if __name__ == '__main__':
