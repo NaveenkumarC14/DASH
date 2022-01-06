@@ -32,8 +32,7 @@ if __name__ == '__main__':
             <div style="height:150px;width: 2%; background-color: white; float:left;left: 1500px; border-radius: 2px;"">
             </div>
                     <div>
-		     <div style="height:100px;width: 22%; background-color: white; float:left; left: 1700px; border-radius: 20px; border: 2px solid #d9d9d9; border-right: right;">
-		    <div style="font-family: Arial, Helvetica, sans-serif;text-align: center; font-weight: bold; color: #33adff; font-size: 12px; padding: 20px 25px 0px 20px;">Confirmed</div>
+		     <div style="height:100px;width: 22%; background-color: white; float:center; left: 1700px; border-radius: 20px; border: 2px solid #d9d9d9; border-right: right;">
                         <div style="font-family: Arial, Helvetica, sans-serif;text-align: center; font-weight: bold; font-size: 30px; padding: 10px 0px 0px 2px;">This value does not exists in Dataframe </div>
             </div>
 	</div>
