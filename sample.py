@@ -9,12 +9,13 @@ import numpy as np
 #  df[df['phone'] == your_name]
     #st.write("There is some value. Processing...")
     
-   
+ 
+)      
 
 st.markdown(
     """
 <style>
-  body {
+  .reportview-container{
   background-image: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366');
   background-repeat: no-repeat;
   background-attachment: fixed;
