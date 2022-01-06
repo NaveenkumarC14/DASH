@@ -21,7 +21,12 @@ if __name__ == '__main__':
         #input.text_input("Insert Number:", value=txt)
         res = df.isin([txt]).any().any()
         if res :
-          st.write("This value exists in Dataframe")
+            st.markdown('''
+<div class="jumbotron text-center" style='background-color: #fff'>
+  <h1></h1><p style="margin: auto; font-weight: 400; text-align: center; width: 100%;">This value exists in Dataframe</p>
+</div>
+ ''', unsafe_allow_html=True);
+           st.write("This value exists in Dataframe")
         else :
           st.write("This value does not exists in Dataframe")
     
