@@ -54,8 +54,7 @@ div.stButton > button:hover {
 col1, col2, col3 = st.beta_columns(3)
 
 # this will put a button in the middle column
-with col2:
-    st.button("I am a button")
+with col3:
     bt = st.button("Search")
 
 
