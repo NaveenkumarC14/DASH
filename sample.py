@@ -42,10 +42,14 @@ if __name__ == '__main__':
 <style>
 div.stButton > button:first-child {
     background-color: #0099ff;
+    align-items: center;
+    justify-content: center;
     color:#ffffff;
 }
 div.stButton > button:hover {
     background-color: #00ff00;
+    align-items: center;
+    justify-content: center;
     color:#ff0000;
     }
 </style>
