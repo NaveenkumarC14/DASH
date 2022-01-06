@@ -29,13 +29,9 @@ if __name__ == '__main__':
            #st.write("This value exists in Dataframe")
         else :
             st.markdown('''
-            <div style="height:150px;width: 2%; background-color: white; float:left;left: 100px; border-radius: 2px;"">
-            </div>
-                    <div>
-		     <div style="height:100px;width: 22%; background-color: white; float:center; left: 100px; border-radius: 20px; border: 2px solid #d9d9d9; border-right: right;">
-                        <div style="font-family: Arial, Helvetica, sans-serif;text-align: center; font-weight: bold; font-size: 30px; padding: 10px 0px 0px 2px;">This value does not exists in Dataframe </div>
-            </div>
-	</div>
+<div class="jumbotron text-center" style='background-color: #fff'>
+  <h1 style="margin: auto; width: 100%;">This value does not exists in Dataframe</h1>
+</div>
  ''', unsafe_allow_html=True);
 
           #st.write("This value does not exists in Dataframe")
