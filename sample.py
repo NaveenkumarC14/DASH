@@ -42,8 +42,7 @@ if __name__ == '__main__':
 <style>
 div.stButton > button:first-child {
     background-color: #0099ff;
-    align-items: center;
-    justify-content: center;
+    align="center";
     color:#ffffff;
 }
 div.stButton > button:hover {
