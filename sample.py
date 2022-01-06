@@ -30,7 +30,12 @@ df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGES
 
 if __name__ == '__main__':
     input = st.empty()
-    txt = input.text_input("Insert number:")
+    st.markdown('''
+<div>
+  <h4 style="color:red" "font-size:200%" align="center" >Enter Phone Number</h4>
+</div>
+ ''', unsafe_allow_html=True);
+    txt = input.text_input(" ")
     bt = st.button("Search")
 
     if bt:
