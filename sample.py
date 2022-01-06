@@ -15,31 +15,13 @@ st.markdown(
     <style>
     .reportview-container {
         background: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366")
-        background-size: cover;
+        background: cover;
     }
     </style>
     """,
     unsafe_allow_html=True
 )    
-st.markdown(
-    """
-    <style>
-    .container {
-        display: flex;
-    }
-    .logo-text {
-        font-weight:700 !important;
-        font-size:50px !important;
-        color: #f9a01b !important;
-        padding-top: 75px !important;
-    }
-    .logo-img {
-        float:right;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
     
 df=pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSjdA5Ku8OzMsGEStlOKciPERkgSLoCYxPObTbFbblm85P0xDtZM5C7fHsrgpEL0pdQCsrz-F_G-Rz3/pub?gid=1840897213&single=true&output=csv")
 
