@@ -48,8 +48,6 @@ div.stButton > button:first-child {
 }
 div.stButton > button:hover {
     background-color: #00ff00;
-    align-items: center;
-    justify-content: center;
     color:#ff0000;
     }
 </style>
