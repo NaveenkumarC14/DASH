@@ -17,7 +17,7 @@ if __name__ == '__main__':
     bt = st.button("Search")
 
     if bt:
-        txt = "txt"
+        #txt = "txt"
         #input.text_input("Insert Number:", value=txt)
         res = df.isin([txt]).any().any()
         if res :
