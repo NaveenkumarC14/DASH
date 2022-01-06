@@ -25,9 +25,6 @@ st.markdown(
     .reportview-container {
         background: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366")
     }
-   .sidebar .sidebar-content {
-        background: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366")
-    }
     </style>
     """,
     unsafe_allow_html=True
